@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Recevoir mes résultats</title>
+</head>
+<body>
+    <h1>Recevoir mes informations par mail</h1>
+
+    <form method="POST">
+        <label for="email">Adresse mail</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
